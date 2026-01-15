@@ -14,10 +14,12 @@ spec:
     spec:
       containers:
         - name: student-portal
-          image: YOUR_DOCKER_REGISTRY/student-portal:v1
+          image: student-portal:v1
           ports:
             - containerPort: 5000
 
+# minikube start
+# minikube image load student-portal:v1
 # kubectl apply -f deployment.yaml
 # kubectl get deployments
 # kubectl get pods -l app=student-portal
